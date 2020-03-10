@@ -1,24 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Hello World</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="white"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Hello World">
-  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <title>Samochody</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+.navbar {
+    background: #444;
+    transition: all .6s;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+ 
+.navbar-dark .navbar-toggler {
+    border-color: #444;
+}
+ 
+.navbar-dark .navbar-toggler:focus {
+    background: none;
+    outline: 0;
+}
+ 
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #fff;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+ 
+.navbar-dark .navbar-toggler:hover span,
+.navbar-dark .navbar-toggler:focus span {
+    background: #ccc;
+}
+ 
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+ 
+.navbar-brand {
+    width: 162px;
+    height: 44px;
+    border: 0;
+    text-indent: -99999px;
+}
+</style>
+
 </head>
-<body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello World!</h1>
-  </div>
-  <script src="js/main.js"></script>
+
+<body>
+    ​
+
+    <div style="margin:0px" class="jumbotron text-center">
+        <div class="container">
+        <h1>Samochody</h1>
+        </div></div>
+            <!-- Top menu -->
+<nav class="navbar navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-1">Firma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-2">Produkty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#section-3">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- continues the page content ... -->
+    
+
+
+  
+
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            <h1 data-toggle="collapse" data-target="#demo_a">lewa kolumna</h1>
+            <p>
+                Słowo samochód utrwaliło się w języku polskim jeszcze w czasach II Rzeczypospolitej, kiedy to zostało wybrane, w drodze konkursu, na słowo określające automobil. Termin samochód pochodzi od słów sam i chód, a więc określa pojazd samodzielnie się poruszający, czyli z własnym napędem. Spośród innych, branych pod uwagę słów, można wspomnieć określenie samojedź.
+            </p>
+          </div>
+          <div class="col">
+            <h1 data-toggle="collapse" data-target="#demo_i">prawa kolumna</h1>
+            <p>Nad pojazdami napędzanymi parą myślano już w XVII wieku. W 1678 roku Ferdinand Verbiest miał zademonstrować taki pojazd cesarzowi chińskiemu, jednak nie ma na to żadnych dowodów. Dlatego za pierwszego konstruktora – wynalazcę pojazdu mechanicznego – uznaje się Francuza o nazwisku Nicolas-Joseph Cugnot, który zaprezentował swoje pionierskie dzieło napędzane silnikiem parowym w roku 1769.
+
+                W 1870 roku Austriak Siegfried Marcus skonstruował, nienadający się do powszechnego użytku, prototyp pojazdu mechanicznego z benzynowym silnikiem o zapłonie iskrowym. Z kolei inny konstruktor, Niemiec Carl Benz, zbudował swój trzykołowy automobil w roku 1885 (w 1886 uzyskał patent). W tych samych latach prace w dziedzinie silników spalinowych oraz pojazdów napędzanych takimi silnikami prowadzili wspólnie Wilhelm Maybach i Gottlieb Daimler. Nie wiadomo jednak dokładnie, kto, jako pierwszy, skonstruował zastosowany do napędu samochodów silnik o spalaniu wewnętrznym. </p>
+          </div>
+         
+        </div>
+
+    </form>
+
 </body>
+
 </html>
+
+​
