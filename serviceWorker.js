@@ -14,3 +14,4 @@ self.addEventListener("install", installEvent => {
     })
   )
 })
+
